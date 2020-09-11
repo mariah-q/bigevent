@@ -47,6 +47,7 @@ function getUserInfo() {
            } */
     })
 }
+
 //渲染用户头像函数
 function renderAvatar(user) {
     //1.获取用户名
@@ -59,8 +60,10 @@ function renderAvatar(user) {
         $('.layui-nav-img').attr('src', user.user_pic).show()
         $('.text-avatar').hide()
     }
-    //2.2渲染文本头像
-    $('.layui-nav-img').hide()
-    var first = name[0].toUpperCase()
-    $('.text-avatar').html(first).show()
+    else {
+        //2.2渲染文本头像
+        $('.layui-nav-img').hide()
+        var first = name[0].toUpperCase()
+        $('.text-avatar').html(first).show()
+    }
 }
