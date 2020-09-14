@@ -34,7 +34,6 @@ $(function () {
                 //重置密码
                 $('.layui-form')[0].reset()
             }
-
         })
     })
 })
